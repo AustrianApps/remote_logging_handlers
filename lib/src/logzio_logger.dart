@@ -43,7 +43,8 @@ class LogzIoApiSender extends BaseDioLogSender {
           cancelToken: cancelToken,
           options: Options(
             contentType: ContentType(
-                ContentType.json.primaryType, ContentType.json.subType),
+                    ContentType.json.primaryType, ContentType.json.subType)
+                .toString(),
           ),
         )
         .then((val) => null);
